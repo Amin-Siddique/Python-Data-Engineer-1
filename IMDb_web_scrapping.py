@@ -21,5 +21,7 @@ def get_titles(rating_input):
     return titles
 
   
-  
 pprint.pprint(get_titles(int(input())))
+
+## Beautiful Soup Documentation:
+##https://www.crummy.com/software/BeautifulSoup/bs4/doc/
