@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
  
 import requests
-
+import pprint
 
 response = requests.get("http://www.imdb.com/chart/top")
 soup = BeautifulSoup(response.text,'html.parser')
@@ -22,4 +22,4 @@ def get_titles(rating_input):
 
   
   
-print(get_titles(int(input())))
+pprint.pprint(get_titles(int(input())))
